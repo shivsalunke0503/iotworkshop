@@ -1,0 +1,44 @@
+menu choice = 0 #Variable menu choice must be a number between 0 and 7
+while menu selection in (0,1,2,3,4,5,6,7):
+    print (“Menu choice:”)
+    print (“1: Exponentiation 2: Multiplication 3: Divide 4: Whole division”)
+    print (“5: Calculate the remainder of the division 6: Addition 7: Subtract”) #The menu options are printed
+    menu choice = int (input (“Make a choice:“))
+    print (“”)
+    if menu choice> 7 or menu choice <1:
+        print (“wrong menu choice”)
+        print (“”)
+        menu choice = 0 # back to menu choice
+    else:
+        a = float (input (“give number a:“))
+        b = float (input (“give number b:“))
+    if menu choice == 1:
+        c = a ** b #Enhance power
+        print (a, "^", b, "=", c)
+        print ("")
+    elif menu choice == 2:
+        c = a * b #Multiply
+        print (a, "*", b, "=", c)
+        print ("")
+    elif menu choice == 3:
+        c = a / b #Share
+        print (a, "/", b, "=", c)
+        print ("")
+    elif menu choice == 4:
+        c = a // b # Whole division
+        c_rounded = format (c, '. 0f') #Variable c, rounded to 0 decimal places
+        print (“Whole number”, a, ”/”, b, ”=”, c_rounded)
+        print ("")
+    elif menu choice == 5:
+        c = a% b #Mudulo
+        c_rounded = format (c, '. 0f') #Variable c, rounded to 0 decimal places
+        print (“Remaining number”, a, ”/”, b, ”=”, c_rounded)
+        print ("")
+    elif menu choice == 6:
+        c = a + b # Addition
+        print (a, "+", b, "=", c)
+        print ("")
+    elif menu choice == 7:
+        c = ab #Subtract
+        print (a, ”-“, b, ”=”, c)
+        print ("")
